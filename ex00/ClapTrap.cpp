@@ -35,6 +35,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other)
         this->_EnergyPoint = other._EnergyPoint;
         this->_HitPoints = other._HitPoints;
     }
+    std::cout << "Copy assignment operator called" << std::endl;
     return (*this);
 }
 
@@ -66,7 +67,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 {
     if (this->_HitPoints == 0)
     {
-        std::cout << "STOP ! STooOOOpp ! He's already dead !" << std::endl;
+        std::cout << "STOP ! STooOOOpp ! " << this->_Name << " already dead !" << std::endl;
         return;
     }
     if (amount >= this->_HitPoints)
