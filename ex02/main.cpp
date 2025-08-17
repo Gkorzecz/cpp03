@@ -1,19 +1,20 @@
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 #include <iostream>
 
 int main(void)
 {
     std::cout << "______________________________________\n";
     std::cout << "\033[1mCONSTRUCTION :\033[0m" << std::endl;
-    ScavTrap Bot1;
+    FragTrap Bot1;
     Bot1.setName("Bender");
-    ScavTrap Bot2(Bot1);
+    FragTrap Bot2(Bot1);
     Bot2.setName("Roberto");
-    ScavTrap Bot3;
+    FragTrap Bot3;
     Bot3 = Bot1;
     Bot3.setName("Calculon");
-    ScavTrap Bot4("Crushinator");
+    FragTrap Bot4("Crushinator");
     std::cout << "\n";
 
     std::cout << "______________________________________\n";
@@ -26,7 +27,7 @@ int main(void)
     Bot2.takeDamage(1);
     Bot2.beRepaired(1);
     Bot2.beRepaired(1);
-    Bot4.guardGate();
+    Bot4.highFivesGuys();
     std::cout << "\n";
 
     std::cout << "______________________________________\n";
