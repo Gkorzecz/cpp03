@@ -30,6 +30,12 @@ int main(void)
     Bot4.highFivesGuys();
     std::cout << "\n";
 
+    std::cout << "_________\n";
+    ClapTrap *Bot5 = new FragTrap();
+    Bot5->attack("Jean-Pierre");
+    delete  Bot5;
+    std::cout << "_________\n";
+
     std::cout << "______________________________________\n";
     std::cout << "\033[1mDESTRUCTION :\033[0m" << std::endl;
     return (0);

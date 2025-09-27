@@ -15,6 +15,11 @@ int main(void)
     Bot3.setName("Calculon");
     ScavTrap Bot4("Crushinator");
     std::cout << "\n";
+    std::cout << "_________\n";
+    ClapTrap *Bot5 = new ScavTrap();
+    Bot5->attack("Jean-Pierre");
+    delete  Bot5;
+    std::cout << "_________\n";
 
     std::cout << "______________________________________\n";
     std::cout << "\033[1mTESTING :\033[0m" << std::endl;
